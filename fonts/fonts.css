@@ -1,0 +1,35 @@
+/*font-family KaushanScript*/
+@font-face {
+	font-family: 'KaushanScript';
+	src:url(fonts/Kaushan_Script/KaushanScript-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/*font-family Felipa*/
+@font-face {
+	font-family: Felipa;
+	src:url(fonts/Felipa/Felipa-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/*font-family Teko-Regular*/
+@font-face {
+	font-family: 'Teko-Regular';
+	src:url(fonts/Teko/Teko-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/*font-family Teko-Light*/
+@font-face {
+	font-family: 'Teko-Light';
+	src:url(fonts/Teko/Teko-Light.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+/*font-family Teko-Medium*/
+@font-face {
+	font-family: 'Teko-Medium';
+	src:url(fonts/Teko/Teko-Medium.ttf);
+	font-weight: normal;
+	font-style: normal;
+}

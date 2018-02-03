@@ -1,0 +1,512 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body{
+	font-family: 'KaushanScript', Felipa, 'Teko-Regular', 'Teko-Light';
+	min-width: 320px;
+	position: relative;
+	line-height: 1.4;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*preloader*/
+.loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+
+.loader .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+/*finish preloader*/
+
+.button{
+	background-color: #fff;
+	display: inline-block;
+	height: 50px;
+	vertical-align: middle;
+	padding: 0 25px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+	border: 2px solid #1B1B1B;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.button:hover{
+	background-color: #1B1B1B;
+	color: #fff;
+}
+
+.button:active{
+	background-color: #333;
+	color: #fff;
+}
+
+h2{
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin: 30px;
+}
+
+h2:after{
+	content: "";
+	display: block;
+	background-image: url(../img/lines.png);
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+	border-bottom-color: #DD626B;
+}
+input:required:valid,
+textarea:required:valid {
+	border-bottom-color: #A7F38E;
+}
+
+header{
+	position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+
+  top: 0px;
+  z-index: 999;
+  margin-bottom: 0;
+}
+
+section{
+	font-family: 'Teko-Light';
+	padding: 100px 0;
+}
+
+a.active{
+	text-decoration: underline !important;
+}
+
+header nav{
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 2px #1B1B1B;
+	box-shadow: 1px 1px 2px #1B1B1B;
+}
+
+section.home{
+	height: 800px;
+}
+
+.navbar-brand{
+	color: #000;
+	font-family: 'KaushanScript';
+	font-size: 42px;
+	margin: 20px;
+	text-decoration: none;
+
+}
+
+.navbar-brand a{
+	text-decoration: none;
+	color: #000;
+}
+
+ul.nav{
+	margin-top: 21px;
+	font-size: 20px;
+}
+
+ul.nav li a{
+	text-decoration: none;
+	padding: 15px 10px;
+	font-family: Felipa;
+}
+
+ul.nav li a:hover,
+ul.nav li a:active{
+	text-decoration: underline;
+	color: #000;
+}
+
+.top-mnu{
+	margin-top: 9px;
+}
+
+
+.in,
+.collapsing{
+	background: rgba(255, 255, 255, 0.7);
+  box-shadow: rgba(27, 27, 27, 0.8) 0px 0px 10px;
+  text-align: right;
+  width: 100%;
+  position: absolute;
+}
+
+.user-info h1{
+	font-family: 'KaushanScript';
+}
+
+.user-info{
+	margin-left: -50px;
+	margin-top: 200px;
+}
+
+.user-info p{
+	font-size: 22px;
+}
+
+.fancy_form{
+    padding: 20px;
+	display: none;
+	max-width: 65%;
+	height: auto;
+	font-family: 'Teko-Light';
+}
+
+.confirm{
+	margin: 30px auto;
+	width: 100px;
+}
+
+.about-me{
+	margin-bottom: 100px;
+}
+
+.about-me p{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.my_skills{
+	margin-bottom: 50px;
+}
+
+.skill h5{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.progress-bar{
+	background-color: #1b1b1b;
+}
+
+section.what-i-do{
+	background-image: url('../img/bgi-sect_whatido.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 200px 0 0px;
+	position: relative;
+}
+
+.service{
+	background-color: #fff;
+	padding: 100px;
+}
+
+.service_main-content{
+	margin-top: 50px;
+}
+
+.service_main-content span{
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	height: 64px;
+}
+
+.service_main-content h6{
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0;
+	font-size: 24px;
+}
+
+.service_main-content p{
+	text-align: justify;
+	font-size: 19px;
+	-ms-text-align-last: center;
+	text-align-last: center;
+}
+
+.service_main-content span{
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+section.works{
+	padding-bottom: 50px;
+}
+
+.work{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.work img{
+	height: auto;
+	position: relative;
+	width: 100%;	
+	border: 2px solid #1B1B1B;
+	transition: all 0.2s linear;
+}
+
+.work .mask{
+	width: calc(100% - 30px);
+	height: 100%;
+	padding: 150px 70px 20px;
+	position: absolute;
+  overflow: hidden;
+  top: 0;
+  background-color: #000;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.recent-works_main-content .mask h4{
+	position: relative;
+	font-family: 'Teko-Light';
+	color: #fff;
+	text-align: left;
+	font-size: 25px;
+	transform: translateY(-100px);
+  transition: all 0.2s ease-in-out;
+}
+
+.recent-works_main-content .mask a{
+	display: inline-block;
+	width: 24px;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 24px;
+	margin-right: 5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.mask a.view{
+	background-image: url(../img/view.png);
+	opacity: 0.5;
+}
+
+.mask a.view:hover{
+	opacity: 1;
+}
+
+.mask a.browse{
+	background-image: url(../img/browse-bgi.png);
+	opacity: 0.5;
+}
+
+.mask a.browse:hover{
+	opacity: 1;
+}
+
+.work:hover{
+	cursor: pointer;
+}
+
+.work:hover .mask{
+	 opacity: 0.7;
+}
+
+.work:hover h4, 
+.work:hover a{
+	transform: translateY(0px);
+	-webkit-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.project_descr{
+	background-color: #fff;
+	max-width: 500px;
+	margin: auto;
+	padding: 0px;
+}
+
+.project_descr h4{
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+}
+
+.project_descr p{
+	font-size: 18px;
+}
+
+.project_descr h4,
+.project_descr p{
+	padding: 20px 24px 5px;
+	font-family: 'Teko-Light';
+}
+
+.fancybox-stage .project_descr img{
+	width: 100%;
+	height: auto;
+}
+
+.load{
+	text-align: center;
+	margin: 20px auto;
+}
+
+.facts{
+	background-image: url(../img/bgi-sect_facts.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding: 70px 0;
+	margin-bottom: 50px;
+	color: #fff;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-top: 100px;
+}
+
+.one-fact{
+	text-align: center;
+}
+
+.one-fact span,
+.one-fact p{
+	margin-bottom: -10px;
+}
+
+.one-fact span{
+	font-weight: bold;
+	font-size: 60px;
+	font-family: 'Teko-Regular';
+}
+
+.one-fact p{
+	font-size: 30px;
+}
+
+.contact_form{
+	margin-top: 30px;
+}
+
+.contact_form label{
+	font-size: 25px;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.contact_form input,
+.contact_form textarea{
+	border: none;
+	width: 100%;
+	border-bottom: 1px solid #1B1B1B;
+	font-size: 20px;
+}
+
+.contact_form textarea{
+	min-height: 150px;
+	max-height: 300px;
+	resize: vertical;
+}
+
+footer{
+	background-color: #1b1b1b;
+	padding: 50px 0;
+	font-size: 13px;
+	max-height: 125px ;
+	color: #FFFFFF;
+}
+
+footer div.socio{
+	float: right;
+	line-height: 0;
+}
+
+footer div.socio ul li{
+	display: inline-block;
+	font-size: 20px;
+	padding: 0 3px;
+}
+
+footer div.socio ul li a{
+	color: #FFFFFF;
+}
+
+@media all and (max-width: 480px){
+    .service{
+        padding: 30px;
+    }
+
+    .fancy_form{
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .fancy_form textarea{
+        max-height: 100px;
+    }
+}
+
+@media all and (max-width: 768px){
+
+	.user-info p,
+	.user-info h1{
+		color: #fff;
+	}
+
+}
+
+@media all and (max-width: 1200px){
+		.work .mask{
+		height: 100%;
+		padding: 30px;
+	}
+
+}
+
+@media all and (max-width: 996px){
+
+	.navbar-header button{
+		margin-top: 28px;
+	}
+
+	div.work img{
+		width: 100%;
+		height: auto;
+	}
+
+	.skill{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+}
