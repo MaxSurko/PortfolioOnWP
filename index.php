@@ -115,7 +115,7 @@
 
                         <div class="col-md-4">
 
-							<span><?php the_post_thumbnail(array()); ?></span>
+							<span><?php the_post_thumbnail(array(0, 0)); ?></span>
 							<h6><?php the_title(); ?></h6>
 							  <?php the_content(); ?>
 
@@ -146,7 +146,7 @@
                      while (have_posts() ) : the_post(); ?>
 
 					<div class="col-md-4 work col-xs-12">
-						    <?php the_post_thumbnail(array()); ?>
+						    <?php the_post_thumbnail(array(0, 0)); ?>
 						<div class="mask">
 							<h4><?php echo the_title(); ?></h4>
 							<a href="#<?php echo get_post_meta($post->ID, 'href', true); ?>" data-fancybox class="view" title="See the work process">&nbsp;</a>
@@ -155,7 +155,7 @@
 						<div class="project_descr hidden" id="<?php echo get_post_meta($post->ID, 'href', true); ?>">
 							<h4><?php echo the_title(); ?></h4>
                                 <?php echo the_content(); ?>
-							<?php the_post_thumbnail(array()); ?>
+							    <?php the_post_thumbnail(array(0, 0)); ?>
 						</div>
 					</div>
 
@@ -165,7 +165,7 @@
                 </div>
 			</div>
 		</div>
-	<div class="col-md-12 col-xs-12 load">
+	<div class="confirm">
 			<button class="button" id="loadMore" onclick="show()">Load more</button>
 	</div>	
 	</div>

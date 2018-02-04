@@ -6,7 +6,10 @@
               <div class="socio">
                   <ul>
 
-                      <?php if ( have_posts() ) : query_posts('cat=5');
+                      <?php
+                      $idObj = get_category_by_slug('socio');
+                      $id = $idObj->term_id;
+                      if ( have_posts() ) : query_posts('cat=' .$id);
                       while (have_posts() ) : the_post(); ?>
 
                       <li>
